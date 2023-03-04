@@ -12,10 +12,12 @@ import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.ResponseBody;
 import org.springframework.web.bind.annotation.RestController;
 
+import com.annotations.spring.AppProperties;
 import com.annotations.spring.LazyBean;
 import com.annotations.spring.MyBean;
 import com.annotations.spring.dto.Usuario;
 import com.annotations.spring.usuarioRepository.UsuarioRepository;
+
 
 @Service
 @RestController // Pacote - Setereotype
@@ -43,6 +45,9 @@ public class UsuarioService {
 		System.out.println("!!!!!!!!!Scope UsuarioService criado!!!!!!!");
 	}
 
+	@Autowired
+	private AppProperties appProperties;
+	
 	// metodo para listar
 	@ResponseBody
 	@RequestMapping("/usuario")
@@ -58,10 +63,12 @@ public class UsuarioService {
 	@GetMapping("/annotation")
 	public long countUsuarios() {
 		long contarUsuarios = usuarioRepository.count();
-		System.out.println("!!!Anotação @Value!!!!: " + appName);
-		System.out.println("!!!Anotação @PropertySource !!!!: " + message);
+		System.out.println("!!!Anotação!!!: " + appName);
+		System.out.println("!!!Anotação!!!: " + message);
+		System.out.println("!!!Anotação !!!!" + appProperties.getProperties());
 		myBean.method();
 		UsuarioService();
+		
 
 		return contarUsuarios;
 	}
