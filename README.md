@@ -17,7 +17,7 @@ Pacote - Bens
 
 Pacote - Context 
 
-@Configuration | @ComponentScan | @Bean | @Lazy | @Primary | @Scope | @PropertySource | @PropertySources | @Profile 
+@Configuration | @ComponentScan | @Bean | @Lazy | @Scope | @PropertySource | @PropertySources | @Profile 
 
 
 Links Documentação
