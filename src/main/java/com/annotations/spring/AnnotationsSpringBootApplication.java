@@ -8,6 +8,9 @@ public class AnnotationsSpringBootApplication {
 
 	public static void main(String[] args) {
 		SpringApplication.run(AnnotationsSpringBootApplication.class, args);
+		
+	
+		
 	}
 
 }
