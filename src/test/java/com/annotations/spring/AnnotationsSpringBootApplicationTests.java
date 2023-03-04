@@ -1,0 +1,13 @@
+package com.annotations.spring;
+
+import org.junit.jupiter.api.Test;
+import org.springframework.boot.test.context.SpringBootTest;
+
+@SpringBootTest
+class AnnotationsSpringBootApplicationTests {
+
+	@Test
+	void contextLoads() {
+	}
+
+}
