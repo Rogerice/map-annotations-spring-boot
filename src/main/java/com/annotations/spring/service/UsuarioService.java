@@ -29,6 +29,15 @@ public class UsuarioService {
 	@Autowired // Pacote - Bens
 	UsuarioRepository usuarioRepository;
 
+	
+	// construtor definir ponto de injeção
+//	final UsuarioRepository usuarioRepository;
+//	
+//	public UsuarioService(UsuarioRepository usuarioRepository) {
+//		this.usuarioRepository = usuarioRepository;
+//	}
+	
+
 	@Value("${app.name}") // Pacote - Bens
 	private String appName;
 
